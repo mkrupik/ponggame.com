@@ -1,0 +1,28 @@
+body {
+    background: linear-gradient(blueviolet, blue, rgba(108, 7, 108, 0.768));
+    background-attachment: fixed;
+    width: 100px;
+}
+
+button {
+    font-family: Verdana;
+    font-style: italic;
+    font-size: 50;
+    left: 850px;
+    position: relative;
+    background-attachment: fixed;
+    width: 200px;
+    height: 100px;
+    border-radius: 5px;
+    border-width: 5px;
+    border-color: blueviolet;
+    background: linear-gradient(orangered, orange, red);
+}
+
+h1 {
+    color: rgb(105, 136, 9);
+    align-items: center;
+    position: relative;
+    font-size: 100px;
+    left: 840px;
+}

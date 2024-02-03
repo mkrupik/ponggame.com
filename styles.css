@@ -1,0 +1,81 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(blueviolet, blue, rgba(108, 7, 108, 0.768));
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.paddle {
+  --position: 50;
+
+  position: absolute;
+  top: calc(var(--position) * 1vh);
+  transform: translateY(-50%);
+  width: 1vh;
+  height: 10vh;
+  background-color: white;
+}
+
+.paddle.left {
+  left: 1vw;
+}
+
+.paddle.right {
+  right: 1vw;
+}
+
+.ball {
+  --x: 50;
+  --y: 50;
+
+  position: absolute;
+  background-color: orange;
+  left: calc(var(--x) * 1vw);
+  top: calc(var(--y) * 1vh);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  width: 2.5vh;
+  height: 2.5vh;
+  border-width: 5px;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  font-size: 7vh;
+}
+
+.score > * {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 0 2vh;
+  margin: 1vh 0;
+  opacity: .5;
+}
+
+.score > :first-child {
+  text-align: right;
+}
+
+.line {
+  border: 1px dotted;
+  background-color: white;
+  rotate: 90deg;
+  position: relative;
+}
+
+button {
+  background: linear-gradient(orangered, orange, red);
+  position: relative;
+  top: 900px;
+  left: 888px;
+  width: 70px;
+  height: 30px;
+  border-radius: 5px;
+  border-width: 5px;
+  font-weight: bold;
+}
